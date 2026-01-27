@@ -78,3 +78,9 @@ ul, ol{
   color: var(--muted);
   font-size: 13px;
 }
+.logo{
+  width: min(520px, 90%);
+  height: auto;
+  display: block;
+  margin: 0 auto 18px auto;
+}
