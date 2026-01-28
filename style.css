@@ -89,4 +89,20 @@ ul, ol{
   height: auto;
   display: block;
   margin: 0 auto 12px auto;
+}.contact-cta {
+  margin-top: 24px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid var(--text);
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+
+.contact-button:hover {
+  background: rgba(0,0,0,0.04);
 }
