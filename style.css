@@ -84,3 +84,9 @@ ul, ol{
   display: block;
   margin: 0 auto 18px auto;
 }
+.logo{
+  width: min(560px, 92%);
+  height: auto;
+  display: block;
+  margin: 0 auto 12px auto;
+}
