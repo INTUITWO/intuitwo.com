@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
 
 :root{
   --bg: #E8DDCC;       /* locked beige */
   --text: #1E1B16;     /* warm charcoal */
-  --muted: #3A332B;
+  --muted: #4a433a;
   --max: 760px;
 }
 
@@ -13,57 +13,137 @@ body{
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Libre Baskerville", Georgia, serif;
+  font-family: "EB Garamond", Georgia, serif;
   line-height: 1.7;
 }
 
 .page{
   max-width: var(--max);
   margin: 0 auto;
-  padding: 40px 20px 90px;
+  padding: 38px 20px 90px;
 }
 
 /* HERO */
 .hero{
   text-align: center;
-  margin: 0 0 28px;
+  margin: 0 0 24px;
 }
 
 .logo{
-  width: min(92vw, 680px); /* dominant but not floating */
+  width: min(94vw, 860px);  /* visually dominant */
   height: auto;
   display: block;
-  margin: 20px auto 0;
+  margin: 14px auto 8px;
 }
 
+/* NAV */
 .nav{
-  margin-top: 14px;
+  margin-top: 10px;
 }
 .nav a{
   color: var(--text);
   text-decoration: none;
   border-bottom: 1px solid var(--text);
   padding-bottom: 3px;
+  font-size: 18px;
 }
 
 /* SECTIONS */
 .section{
-  margin-top: 28px;
+  margin-top: 26px;
 }
 .section:first-of-type{
   margin-top: 0;
 }
 
 h2{
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  margin: 0 0 14px 0;
+  font-size: 22px;
+  margin: 0 0 10px 0;
 }
 
 h3{
-  font-size: 14px;
-  margin: 18px 0 10px 0;
+  font-size: 18px;
+  margin: 18px 0 8px 0;
 }
 
 .lead{
-  margin: 
+  margin: 0;
+  font-size: 21px;
+  max-width: 62ch;
+}
+
+/* CONTACT BUTTON */
+.contact-cta{
+  margin-top: 16px;
+}
+
+.contact-button{
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid var(--text);
+  text-decoration: none;
+  color: var(--text);
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+
+.contact-button:hover{
+  background: rgba(0,0,0,0.05);
+}
+
+/* LISTS */
+ul, ol{
+  padding-left: 22px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.services{
+  margin-top: 6px;
+}
+
+.steps{
+  margin-top: 8px;
+}
+
+/* SEE MORE */
+.details{
+  margin-top: 14px;
+}
+
+.details summary{
+  cursor: pointer;
+  display: inline-block;
+  color: var(--text);
+  border-bottom: 1px solid var(--text);
+  padding-bottom: 3px;
+  font-size: 18px;
+}
+
+.details-body{
+  margin-top: 14px;
+}
+
+.details-body ul{
+  margin: 0 0 14px 0;
+  padding-left: 22px;
+}
+
+/* PRICING PAGE */
+.tier{
+  margin: 18px 0;
+}
+
+.note{
+  color: var(--muted);
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+/* FOOTER */
+.site-footer{
+  text-align: center;
+  margin: 70px 0 0;
+  font-size: 14px;
+  opacity: 0.55;
+}
