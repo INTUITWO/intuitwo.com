@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 :root{
-  --bg: #E8DDCC;       /* locked INTUITWO beige */
+  --bg: #E8DDCC;       /* locked beige */
   --text: #1E1B16;     /* warm charcoal */
   --muted: #3A332B;
   --max: 760px;
@@ -20,25 +20,24 @@ body{
 .page{
   max-width: var(--max);
   margin: 0 auto;
-  padding: 64px 20px;
+  padding: 40px 20px 90px;
 }
 
+/* HERO */
 .hero{
   text-align: center;
-  margin: 40px 0 30px;
+  margin: 0 0 28px;
 }
 
-/* 4× dominant logo */
 .logo{
-  width: min(90vw, 900px);
+  width: min(92vw, 680px); /* dominant but not floating */
   height: auto;
   display: block;
-  margin: 60px auto 18px auto;
+  margin: 20px auto 0;
 }
 
-/* nav link */
 .nav{
-  margin-top: 10px;
+  margin-top: 14px;
 }
 .nav a{
   color: var(--text);
@@ -47,9 +46,12 @@ body{
   padding-bottom: 3px;
 }
 
-/* sections */
+/* SECTIONS */
 .section{
-  margin-top: 44px;
+  margin-top: 28px;
+}
+.section:first-of-type{
+  margin-top: 0;
 }
 
 h2{
@@ -60,78 +62,8 @@ h2{
 
 h3{
   font-size: 14px;
-  margin: 20px 0 10px 0;
+  margin: 18px 0 10px 0;
 }
 
 .lead{
-  margin: 0;
-  max-width: 62ch;
-}
-
-/* contact button */
-.contact-cta{
-  margin-top: 22px;
-}
-
-.contact-button{
-  display: inline-block;
-  padding: 10px 22px;
-  border: 1px solid var(--text);
-  text-decoration: none;
-  color: var(--text);
-  letter-spacing: 0.03em;
-}
-
-.contact-button:hover{
-  background: rgba(0,0,0,0.05);
-}
-
-/* services list */
-.services{
-  margin: 0;
-  padding-left: 22px;
-}
-
-.steps{
-  padding-left: 22px;
-}
-
-/* see more */
-.details{
-  margin-top: 18px;
-}
-
-.details summary{
-  cursor: pointer;
-  display: inline-block;
-  color: var(--text);
-  border-bottom: 1px solid var(--text);
-  padding-bottom: 3px;
-}
-
-.details-body{
-  margin-top: 18px;
-}
-
-.details-body ul{
-  margin: 0 0 16px 0;
-  padding-left: 22px;
-}
-
-/* pricing page */
-.tier{
-  margin: 18px 0;
-}
-
-.note{
-  color: var(--muted);
-  margin-top: 14px;
-}
-
-/* footer trademark */
-.site-footer{
-  text-align: center;
-  margin: 90px 0 40px;
-  font-size: 0.9rem;
-  opacity: 0.65;
-}
+  margin: 
