@@ -77,20 +77,12 @@ ul, ol{
   text-align: center;
   color: var(--muted);
   font-size: 13px;
-}
-.logo{
-  width: min(520px, 90%);
+.logo {
+  width: min(90vw, 900px);
   height: auto;
   display: block;
-  margin: 0 auto 18px auto;
+  margin: 80px auto 40px auto;
 }
-.logo{
-  width: min(560px, 92%);
-  height: auto;
-  display: block;
-  margin: 0 auto 12px auto;
-}.contact-cta {
-  margin-top: 24px;
 }
 
 .contact-button {
