@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
 :root{
-  --bg: #E8DDCC;       /* INTUITWO warm beige */
+  --bg: #E8DDCC;       /* locked INTUITWO beige */
   --text: #1E1B16;     /* warm charcoal */
   --muted: #3A332B;
   --max: 760px;
@@ -11,8 +13,8 @@ body{
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  line-height: 1.6;
+  font-family: "Libre Baskerville", Georgia, serif;
+  line-height: 1.7;
 }
 
 .page{
@@ -23,78 +25,113 @@ body{
 
 .hero{
   text-align: center;
-  margin-bottom: 40px;
+  margin: 40px 0 30px;
 }
 
-.wordmark{
-  margin: 0;
-  letter-spacing: 0.04em;
-  font-size: 44px;
+/* 4× dominant logo */
+.logo{
+  width: min(90vw, 900px);
+  height: auto;
+  display: block;
+  margin: 60px auto 18px auto;
 }
 
-.descriptor{
-  margin: 10px 0 0 0;
-  color: var(--muted);
-  font-size: 16px;
-}
-
+/* nav link */
 .nav{
-  margin-top: 18px;
+  margin-top: 10px;
 }
-
 .nav a{
   color: var(--text);
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--text);
+  padding-bottom: 3px;
+}
+
+/* sections */
+.section{
+  margin-top: 44px;
 }
 
 h2{
   font-size: 16px;
   letter-spacing: 0.02em;
-  margin-top: 34px;
-  margin-bottom: 10px;
+  margin: 0 0 14px 0;
 }
 
-ul, ol{
-  padding-left: 22px;
-}
-
-.tier{
-  margin: 14px 0;
-}
-
-.tier h3{
-  margin: 0 0 4px 0;
+h3{
   font-size: 14px;
+  margin: 20px 0 10px 0;
 }
 
-.note{
-  color: var(--muted);
+.lead{
+  margin: 0;
+  max-width: 62ch;
 }
 
-.footer{
-  margin-top: 50px;
-  text-align: center;
-  color: var(--muted);
-  font-size: 13px;
-.logo {
-  width: min(90vw, 900px);
-  height: auto;
-  display: block;
-  margin: 80px auto 40px auto;
-}
+/* contact button */
+.contact-cta{
+  margin-top: 22px;
 }
 
-.contact-button {
+.contact-button{
   display: inline-block;
   padding: 10px 22px;
   border: 1px solid var(--text);
   text-decoration: none;
   color: var(--text);
-  font-size: 0.95rem;
   letter-spacing: 0.03em;
 }
 
-.contact-button:hover {
-  background: rgba(0,0,0,0.04);
+.contact-button:hover{
+  background: rgba(0,0,0,0.05);
+}
+
+/* services list */
+.services{
+  margin: 0;
+  padding-left: 22px;
+}
+
+.steps{
+  padding-left: 22px;
+}
+
+/* see more */
+.details{
+  margin-top: 18px;
+}
+
+.details summary{
+  cursor: pointer;
+  display: inline-block;
+  color: var(--text);
+  border-bottom: 1px solid var(--text);
+  padding-bottom: 3px;
+}
+
+.details-body{
+  margin-top: 18px;
+}
+
+.details-body ul{
+  margin: 0 0 16px 0;
+  padding-left: 22px;
+}
+
+/* pricing page */
+.tier{
+  margin: 18px 0;
+}
+
+.note{
+  color: var(--muted);
+  margin-top: 14px;
+}
+
+/* footer trademark */
+.site-footer{
+  text-align: center;
+  margin: 90px 0 40px;
+  font-size: 0.9rem;
+  opacity: 0.65;
 }
