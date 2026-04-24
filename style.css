@@ -32,7 +32,7 @@ a {
 .site-shell {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 270px 1fr;
+  grid-template-columns: 320px 1fr;
 }
 
 .sidebar {
@@ -47,7 +47,7 @@ a {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 38px 38px 34px;
+  padding: 38px 30px 34px;
 }
 
 .sidebar-brand {
@@ -60,15 +60,18 @@ a {
 
 .brand-wordmark {
   font-family: "Didot", "Bodoni MT", "Iowan Old Style", "Times New Roman", serif;
-  font-size: 3rem;
-  letter-spacing: 0.08em;
+  font-size: 2.45rem;
+  letter-spacing: 0.05em;
   line-height: 0.95;
   color: #f6f2eb;
+  display: block;
+  max-width: 100%;
 }
 
 .brand-underline {
   display: block;
-  width: 150px;
+  width: 170px;
+  max-width: 100%;
   height: 1.5px;
   background: var(--accent);
 }
@@ -89,10 +92,10 @@ a {
 .sidebar-nav a.active::before {
   content: "";
   position: absolute;
-  left: -38px;
+  left: -30px;
   top: 50%;
   transform: translateY(-50%);
-  width: 52px;
+  width: 42px;
   height: 1.5px;
   background: var(--accent);
 }
@@ -105,15 +108,16 @@ a {
 
 .hero {
   background:
-    radial-gradient(circle at right center, rgba(184, 154, 99, 0.06) 0%, rgba(184, 154, 99, 0.02) 28%, rgba(0, 0, 0, 0) 29%),
-    linear-gradient(to right, rgba(184, 154, 99, 0.04) 0, rgba(184, 154, 99, 0.04) 16%, transparent 16%, transparent 100%),
+    radial-gradient(circle at right center, rgba(184, 154, 99, 0.05) 0%, rgba(184, 154, 99, 0.015) 24%, rgba(0, 0, 0, 0) 25%),
+    linear-gradient(to right, rgba(184, 154, 99, 0.035) 0, rgba(184, 154, 99, 0.035) 14%, transparent 14%, transparent 100%),
     var(--bg-light);
-  padding: 76px 78px 52px;
+  padding: 58px 64px 28px;
   border-bottom: 1px solid var(--border);
 }
 
 .hero-copy {
   max-width: 760px;
+  padding-bottom: 0;
 }
 
 .hero-wordmark {
@@ -135,26 +139,27 @@ a {
 
 .hero-subtitle {
   font-family: "Didot", "Bodoni MT", "Iowan Old Style", "Times New Roman", serif;
-  font-size: 1.28rem;
-  letter-spacing: 0.26em;
+  font-size: 1.18rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  line-height: 1.3;
+  line-height: 1.25;
   color: var(--text-dark);
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .hero p {
-  margin: 0 0 24px;
+  margin: 0 0 16px;
   max-width: 690px;
-  font-size: 1rem;
-  line-height: 1.65;
+  font-size: 0.98rem;
+  line-height: 1.55;
   color: var(--text-body);
 }
 
 .hero-actions {
   display: flex;
-  gap: 18px;
-  margin-top: 18px;
+  gap: 16px;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .btn {
@@ -187,12 +192,13 @@ a {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   border-bottom: 1px solid var(--border);
+  margin-top: 0;
 }
 
 .service-card {
   background: var(--bg-light-2);
-  min-height: 245px;
-  padding: 34px 24px 28px;
+  min-height: 210px;
+  padding: 26px 20px 22px;
   border-right: 1px solid var(--border);
   text-align: center;
 }
@@ -259,11 +265,11 @@ a {
 
 @media (max-width: 1180px) {
   .site-shell {
-    grid-template-columns: 230px 1fr;
+    grid-template-columns: 280px 1fr;
   }
 
   .hero {
-    padding: 58px 48px 42px;
+    padding: 48px 40px 24px;
   }
 
   .services-grid {
